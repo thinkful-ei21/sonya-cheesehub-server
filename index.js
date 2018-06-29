@@ -45,12 +45,6 @@ const cheeses = [
 app.get('/api/cheeses', (req, res) => {
 
   res.json(cheeses)
-    .catch(err => {
-      console.error({
-        status: err.status,
-        mesage: err.message
-      });
-    });
 });
 
 function runServer(port = PORT) {
